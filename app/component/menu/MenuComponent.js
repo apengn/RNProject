@@ -28,9 +28,9 @@ class MenuComponent extends Component {
                             <View style={{flexDirection:'row',alignItems:'center'}}>
                                 <Image source={this.props.info_head}
                                        style={{height:40,width:40,borderColor:'white',borderWidth:2,borderRadius:20,marginLeft:10}}/>
-                                <Text numberOfLines={1} style={{textAlign:'left'}}>{this.props.name}</Text>
+                                <Text numberOfLines={1} style={{textAlign:'left',color:'white'}}>{this.props.name}</Text>
                             </View>
-                            <Text numberOfLines={1} style={{textAlign:'left'}}>个性签名</Text>
+                            <Text numberOfLines={1} style={{marginLeft:10,marginTop:10,textAlign:'left',fontSize:10,fontStyle:'italic',color:'white'}}>个性签名</Text>
                         </View>
 
 
