@@ -10,10 +10,12 @@ import {
     DrawerLayoutAndroid,
     Text,
 }from 'react-native'
+
 import TabNavigator from 'react-native-tab-navigator'
 import  HomeComponent from '../fragment/HomeComponent'
 import  MyComponent from '../fragment/MyComponent'
 import AboutScreen from './data/AboutScreen'
+import MenuComponent from './menu/MenuComponent'
 class MainComponent extends Component {
 
     // 构造
@@ -26,12 +28,10 @@ class MainComponent extends Component {
     }
 
     render() {
-        let navigationView = (<View>
-            <Text>Menu</Text>
-        </View>);
+        let navigationView = (<MenuComponent menu_head={require('../img/menu_head.jpg')} name={'张三'} info_head={require('../img/face_icon.png')}/>);
         return (
             <DrawerLayoutAndroid
-                drawerWidth={AboutScreen.screen.width*0.35}
+                drawerWidth={AboutScreen.screen.width*0.75}
                 drawerPosition={DrawerLayoutAndroid.positions.Left}
                 renderNavigationView={()=>navigationView}
             >
