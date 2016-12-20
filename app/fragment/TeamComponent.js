@@ -7,13 +7,13 @@ import {
     View,
     Text,
 }from 'react-native'
-class MsgComponent extends Component {
+class TeamComponent extends Component {
     render() {
         return (<View>
 
-            <Text>消息</Text>
+            <Text>我的团</Text>
 
         </View>);
     }
 }
-export  default MsgComponent;
+export  default TeamComponent;

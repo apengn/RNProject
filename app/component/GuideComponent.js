@@ -49,7 +49,7 @@ class GuideComponent extends Component {
                             <View
                                 style={{justifyContent:'flex-end',alignItems:'center',width:AboutScreen.screen.width,height:AboutScreen.screen.height*0.9}}>
                                 <TouchableHighlight onPress={this.enterLogin.bind(this)}
-                                                    activeOpacity={0.5}//被点击时为不透明
+                                                    activeOpacity={0.5}
                                                     underlayColor={'#E3E3E3'}
                                                     style={{backgroundColor:'#545657 ',borderColor:'#545657 ',borderWidth:1,borderRadius:5}}
                                 >
