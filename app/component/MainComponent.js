@@ -71,7 +71,7 @@ class MainComponent extends Component {
                         renderIcon={() => <Image source={require("../img/tab_home_normal.png")} style={styles.iconStyle}/>}
                         renderSelectedIcon={() => <Image source={require("../img/tab_home_press.png")} style={styles.iconStyle}/>}
                         onPress={() => this.setState({ selectedTab: 'home' })}>
-                        <HomeComponent />
+                        <HomeComponent/>
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         title="我的团"
